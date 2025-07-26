@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   background: #fff;
   padding: 30px;
@@ -41,25 +41,13 @@ header {
   flex: 1;
 }
 
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-
-  .intro {
-    text-align: center;
-  }
-}
-
 header h1 {
   font-size: 2rem;
+  margin-bottom: 8px;
   color: #222;
 }
 
 header p {
-  margin-top: 8px;
   color: #666;
 }
 
@@ -118,12 +106,18 @@ footer {
   margin-top: 40px;
 }
 
-.profile-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #004466;
-  margin-bottom: 15px;
-}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 
+  .intro {
+    text-align: center;
+  }
+
+  .profile-img-3x4 {
+    margin-bottom: 15px;
+  }
+}
