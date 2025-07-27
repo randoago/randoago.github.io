@@ -166,3 +166,64 @@ footer {
     text-align: center;
   }
 }
+
+/* === Tableau Dashboard Page === */
+
+.dashboard-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #f4f6f8;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: 1.8rem;
+  color: #004466;
+  margin-bottom: 0.3rem;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.viz-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.tableauPlaceholder object {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-back {
+  display: inline-block;
+  background-color: #004466;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.btn-back:hover {
+  background-color: #006699;
+}
