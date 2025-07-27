@@ -13,20 +13,23 @@
       <p>Visualisasi interaktif wilayah adat di kawasan Kepulauan Buton menggunakan Tableau Public</p>
     </div>
 
-    <section class="map-description">
+    <div class="map-description">
       <p>
         Peta ini adalah peta tana ulayat Kepulauan Buton. Peta ini merepresentasikan wilayah adat yang dikuasai secara turun-temurun oleh komunitas lokal yang tersebar di wilayah Kepulauan Buton, Sulawesi Tenggara. Setiap batas wilayah adat dalam peta ini menunjukkan ruang hidup masyarakat yang memiliki struktur sosial, hukum adat, dan sistem pengelolaan sumber daya yang khas.
       </p>
       <p>
-        Kepulauan Buton sendiri merupakan gugusan pulau di bagian tenggara Indonesia, yang mencakup Pulau Buton, Pulau Muna, Wangi-wangi (Wakatobi), dan sejumlah pulau kecil lainnya. Wilayah ini dikenal dengan keragaman budaya dan etnis seperti Buton, Muna, Cia-Cia, dan Wakatobi, yang masing-masing memiliki identitas adat dan sejarah peradaban maritim yang kuat. Pemetaan ini bertujuan untuk mengangkat kembali eksistensi hak-hak adat serta sebagai referensi penting dalam penyusunan kebijakan tata ruang berbasis kearifan lokal.
+        Kepulauan Buton sendiri merupakan gugusan pulau di bagian tenggara Indonesia, yang mencakup Pulau Buton, Pulau Muna, Wangi-wangi (Wakatobi), dan sejumlah kecil pulau lainnya. Wilayah ini dikenal dengan keragaman budaya dan etnis seperti Buton, Muna, Cia-Cia, dan Wakatobi, yang masing-masing memiliki identitas lokal adat dan sejarah peradaban yang kuat.
       </p>
-    </section>
+      <p>
+        Pemanfaatan ini bertujuan untuk mengangkat kembali eksistensi hak-hak adat serta sebagai referensi penting dalam penyusunan kebijakan tata ruang berbasis kearifan lokal.
+      </p>
+    </div>
 
     <div class="viz-container">
-      <div class='tableauPlaceholder' id='viz1753588480170'>
+      <div class='tableauPlaceholder' id='vizPetaAdat' style='width: 100%; height: 100%;'>
         <noscript>
-          <a href='#'>
-            <img alt='Peta_adat' src='https://public.tableau.com/static/images/Pe/PetaAdat/Peta_adat/1_rss.png' style='border: none' />
+          <a href='https://public.tableau.com/views/PetaAdat/Peta_adat'>
+            <img alt='Peta Adat' src='https://public.tableau.com/static/images/Pe/PetaAdat/Peta_adat/1.png' style='border: none' />
           </a>
         </noscript>
         <object class='tableauViz' style='display:none;'>
@@ -48,14 +51,23 @@
     </div>
 
     <div class="btn-wrapper">
-      <a href="../index.html" class="btn-back">← Kembali ke Beranda</a>
+      <a href="../" class="btn-back">← Kembali ke Beranda</a>
     </div>
 
     <footer>
-      <p>&copy; Rando Ago <span id="year"></span></p>
+      &copy; Rando 2025
     </footer>
   </div>
 
-  <div class='tableauPlaceholder' id='viz1753588480170' style='position: relative'><noscript><a href='#'><img alt='Peta_adat ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PetaAdat&#47;Peta_adat&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PetaAdat&#47;Peta_adat' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PetaAdat&#47;Peta_adat&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1753588480170');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+  <script type='text/javascript'>
+    const divElement = document.getElementById('vizPetaAdat');
+    const vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = divElement.offsetWidth * 0.75 + 'px';
+
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
 </body>
 </html>
