@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradasi Agregat Bina Marga</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>📊 Analisis Gradasi Campuran Agregat</h1>
+
+  <div class="controls">
+    <label>Spesifikasi:
+      <select id="spec">
+        <option value="WC">WC (AC-WC)</option>
+        <option value="BC">BC (AC-BC)</option>
+        <option value="BASE">BASE</option>
+      </select>
+    </label>
+
+    <label>Jumlah Material:
+      <input type="number" id="n_material" min="1" max="5" value="3">
+    </label>
+
+    <label>Interval Campuran (%):
+      <input type="number" id="interval" min="1" max="10" value="5">
+    </label>
+
+    <button id="runBtn">Optimasi</button>
+  </div>
+
+  <div id="plot"></div>
+  <div id="table-container"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
