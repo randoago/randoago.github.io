@@ -59,17 +59,17 @@ td, th {
 }
 
 .social-profile a {
-  width: 60px;
-  height: 60px;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff; /* opsional */
-  border-radius: 10px; /* biar rapi */
+  background: #fff; 
+  border-radius: 10px; 
 }
 
 .social-profile img {
-  max-width: 70%;   /* penting! jangan 100% */
-  max-height: 70%;  /* biar ada padding otomatis */
+  max-width: 70%;   
+  max-height: 70%; 
   object-fit: contain;
 }
