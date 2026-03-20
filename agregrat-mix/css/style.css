@@ -50,3 +50,21 @@ td, th {
   padding: 6px;
   text-align: center;
 }
+
+.social-profile {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.social-profile img {
+  width: 42px; /* bisa kamu sesuaikan */
+  height: 42px;
+  object-fit: contain;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.social-profile img:hover {
+  transform: scale(1.15);
+  filter: brightness(1.2);
+}
