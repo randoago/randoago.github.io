@@ -53,18 +53,25 @@ td, th {
 
 .social-profile {
   display: flex;
-  gap: 16px;
+  flex-direction: row;
+  justify-content: center; /* bisa diganti left kalau mau rata kiri */
   align-items: center;
+  gap: 20px;
+}
+
+.social-profile a {
+  display: inline-block;
+  width: 50px;   /* FIX container */
+  height: 50px;  /* FIX container */
 }
 
 .social-profile img {
-  width: 42px; /* bisa kamu sesuaikan */
-  height: 42px;
-  object-fit: contain;
-  transition: transform 0.25s ease, filter 0.25s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* biar tidak gepeng */
+  transition: transform 0.2s ease;
 }
 
 .social-profile img:hover {
-  transform: scale(1.15);
-  filter: brightness(1.2);
+  transform: scale(1.1);
 }
