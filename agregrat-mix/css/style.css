@@ -52,25 +52,30 @@ td, th {
 }
 
 .social-profile {
-  display: flex;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: left;
-  align-items: left;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);   
+  justify-content: start; 
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .social-profile a {
-  width: 20px;
-  height: 20px;
+  width: 80px;
+  height: 80px;
   display: flex;
-  justify-content: left;
-  align-items: left;
-  background: #fff; 
-  border-radius: 10px; 
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden; 
 }
 
 .social-profile img {
-  max-width: 70%;   
-  max-height: 70%; 
+  width: 40px !important;
+  height: 40px !important;
   object-fit: contain;
+}
+.social-profile a:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
