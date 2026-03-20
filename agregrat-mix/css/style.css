@@ -53,16 +53,24 @@ td, th {
 
 .social-profile {
   display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: left;
+  align-items: left;
+  gap: 20px;
 }
 
 .social-profile a {
-  flex: 1; /* bagi 3 kolom */
+  width: 20px;
+  height: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+  background: #fff; 
+  border-radius: 10px; 
 }
 
 .social-profile img {
-  width: 30px;
-  height: 30px;
+  max-width: 70%;   
+  max-height: 70%; 
+  object-fit: contain;
 }
