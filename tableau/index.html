@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peta Adat Kepulauan Buton</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    @media (max-width: 768px) {
+      .map-description {
+        font-size: 0.9rem;
+        padding: 1rem;
+      }
+
+      .viz-container {
+        height: 400px !important;
+      }
+
+      .btn-back {
+        width: 100%;
+        display: block;
+        padding: 12px;
+        font-size: 1rem;
+      }
+
+      .dashboard-header h1 {
+        font-size: 1.4rem;
+      }
+
+      .dashboard-header p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <h1>Peta Adat Kepulauan Buton</h1>
+      <p>Visualisasi interaktif wilayah adat di kawasan Kepulauan Buton menggunakan Tableau Public</p>
+    </div>
+
+    <div class="map-description">
+      <p>
+        Peta ini adalah peta tana ulayat Kepulauan Buton. Peta ini merepresentasikan wilayah adat yang dikuasai secara turun-temurun oleh komunitas lokal yang tersebar di wilayah Kepulauan Buton, Sulawesi Tenggara. Setiap batas wilayah adat dalam peta ini menunjukkan ruang hidup masyarakat yang memiliki struktur sosial, hukum adat, dan sistem pengelolaan sumber daya yang khas.
+      </p>
+      <p>
+        Kepulauan Buton sendiri merupakan gugusan pulau di bagian tenggara Indonesia, yang mencakup Pulau Buton, Pulau Muna, Wangi-wangi (Wakatobi), dan sejumlah kecil pulau lainnya. Wilayah ini dikenal dengan keragaman budaya dan etnis seperti Buton, Muna, Cia-Cia, dan Wakatobi, yang masing-masing memiliki identitas lokal adat dan sejarah peradaban yang kuat.
+      </p>
+      <p>
+        Pemanfaatan ini bertujuan untuk mengangkat kembali eksistensi hak-hak adat serta sebagai referensi penting dalam penyusunan kebijakan tata ruang berbasis kearifan lokal.
+      </p>
+    </div>
+
+    <div class="viz-container">
+      <div class='tableauPlaceholder' id='vizPetaAdat' style='width: 100%; height: 100%;'>
+        <noscript>
+          <a href='https://public.tableau.com/views/PetaAdat/Peta_adat'>
+            <img alt='Peta Adat' src='https://public.tableau.com/static/images/Pe/PetaAdat/Peta_adat/1.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='PetaAdat/Peta_adat' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/Pe/PetaAdat/Peta_adat/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
+      </div>
+    </div>
+
+    <div class="btn-wrapper">
+      <a href="../" class="btn-back">← Kembali ke Beranda</a>
+    </div>
+
+    <footer>
+      &copy; Rando Ago 2025
+    </footer>
+  </div>
+
+  <script type='text/javascript'>
+    const divElement = document.getElementById('vizPetaAdat');
+    const vizElement = divElement.getElementsByTagName('object')[0];
+
+    function resizeViz() {
+      const width = divElement.offsetWidth;
+      vizElement.style.width = "100%";
+      vizElement.style.height = (width * 0.65) + "px";
+    }
+
+    resizeViz(); // Initial load
+
+    window.addEventListener("resize", resizeViz);
+
+    const scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+</html>

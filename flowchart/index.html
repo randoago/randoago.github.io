@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pengertian Flowchart — Penjelasan Singkat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{--accent:#0d6efd;--muted:#6c757d}
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.6;color:#212529}
+    .hero{background:linear-gradient(180deg,rgba(13,110,253,0.08),transparent);padding:3.5rem 1rem}
+    .symbol{min-height:120px}
+    .flow-svg{max-width:100%;height:auto;border-radius:8px;box-shadow:0 6px 18px rgba(19,24,33,0.06)}
+    pre code{white-space:pre-wrap}
+    footer{padding:2rem 0;color:var(--muted)}
+    .badge-accent{background:var(--accent);color:#fff}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Flowchart</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#definisi">Pengertian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#simbol">Simbol</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contoh">Contoh</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cara">Cara Membuat</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-6">Pengertian <span class="badge badge-accent">Flowchart</span></h1>
+          <p class="lead">Flowchart (diagram alir) adalah representasi grafis dari urutan langkah atau proses. Digunakan untuk memahami, menganalisis, dan mendesain proses secara sistematis.</p>
+        </div>>
+      </div>
+    </div>
+  </header>
+  <div class="text-center my-4">
+  <img src="Simbol-flowchart.jpg" alt="Simbol Flowchart" class="img-fluid rounded shadow-sm" style="max-width: 600px;">
+  <p class="text-muted mt-2"><small>simbol-simbol dasar dalam flowchart</small></p>
+</div>
+
+  <main class="container my-5">
+    <section id="definisi" class="mb-5">
+      <h2>Definisi</h2>
+      <p>Flowchart atau diagram alir adalah diagram yang menunjukkan urutan langkah-langkah dalam sebuah proses atau sistem menggunakan simbol-simbol standar (mis. terminator, proses, keputusan, input/output). Flowchart membantu memecah proses kompleks menjadi langkah yang lebih sederhana dan mudah diikuti.</p>
+      <ul>
+        <li><strong>Tujuan:</strong> mendokumentasikan proses, merancang algoritme, debugging, dan komunikasi antar tim.</li>
+        <li><strong>Manfaat:</strong> visualisasi, deteksi hambatan (bottleneck), standarisasi prosedur.</li>
+      </ul>
+    </section>
+
+    <section id="simbol" class="mb-5">
+      <h2>Simbol Utama Flowchart</h2>
+      <div class="row gy-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3 symbol">
+            <h5>Terminátor (Start / End)</h5>
+            <p class="mb-1"><small>Oval yang menandai awal dan akhir proses.</small></p>
+            <div class="mt-2"><svg width="100%" height="50" viewBox="0 0 120 50" class="flow-svg"><ellipse cx="60" cy="25" rx="50" ry="20" fill="#f8f9fa" stroke="#ced4da"/></svg></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3 symbol">
+            <h5>Proses</h5>
+            <p class="mb-1"><small>Persegi panjang: tindakan atau operasi (mis. hitung, simpan).</small></p>
+            <div class="mt-2"><svg width="100%" height="50" viewBox="0 0 120 50" class="flow-svg"><rect x="10" y="10" width="100" height="30" rx="4" fill="#fff" stroke="#ced4da"/></svg></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3 symbol">
+            <h5>Keputusan (Decision)</h5>
+            <p class="mb-1"><small>Belah ketupat: percabangan (ya/tidak, true/false).</small></p>
+            <div class="mt-2"><svg width="100%" height="50" viewBox="0 0 120 50" class="flow-svg"><polygon points="60,5 105,25 60,45 15,25" fill="#fff" stroke="#ced4da"/></svg></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3 symbol">
+            <h5>Input / Output</h5>
+            <p class="mb-1"><small>Paralelogram: data masuk atau keluar (mis. baca file, tampilkan hasil).</small></p>
+            <div class="mt-2"><svg width="100%" height="50" viewBox="0 0 120 50" class="flow-svg"><polygon points="20,10 110,10 90,40 0,40" fill="#fff" stroke="#ced4da"/></svg></div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card p-3 symbol">
+            <h5>Dokumen</h5>
+            <p class="mb-1"><small>Simbol dokumen menunjukkan keluaran berbentuk dokumen.</small></p>
+            <div class="mt-2"><svg width="100%" height="50" viewBox="0 0 120 50" class="flow-svg"><rect x="10" y="6" width="80" height="38" rx="2" fill="#fff" stroke="#ced4da"/><path d="M90 6 v10 a6 6 0 0 0 6 6" fill="none" stroke="#ced4da"/></svg></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contoh" class="mb-5">
+      <h2>Contoh Flowchart Sederhana</h2>
+      <p>Contoh: memeriksa apakah sebuah angka genap atau ganjil:</p>
+      <div class="card p-3 mb-3">
+         <img src="flow1.png" alt="Flowchart" class="img-fluid rounded shadow-sm" style="max-width: 600px;">
+        <p class="text-muted mt-2"><small>Contoh Flowchart</small></p>
+
+      </div>
+      <p><strong>Studi Kasus:</strong> Menghitung Luas Segitiga.</p>
+    </section>
+
+    <section id="cara" class="mb-5">
+      <h2>Cara Membuat Flowchart</h2>
+      <ol>
+        <li>Tentukan tujuan proses yang ingin digambarkan.</li>
+        <li>Identifikasi langkah-langkah utama dan titik keputusan.</li>
+        <li>Gunakan simbol standar dan sambungkan dengan panah aliran.</li>
+        <li>Uji alur untuk memastikan tak ada jalur yang terlewat.</li>
+        <li>Sederhanakan bila memungkinkan untuk memudahkan pemahaman.</li>
+      </ol>
+      <p>Alat populer: draw.io, Lucidchart, Microsoft Visio, atau menggambar langsung dengan SVG/HTML/CSS untuk dokumentasi web.</p>
+    </section>
+
+    <section id="tips" class="mb-5">
+      <h2>Tips Singkat</h2>
+      <ul>
+        <li>Gunakan label panah jika alur memiliki banyak percabangan.</li>
+        <li>Jaga konsistensi ukuran dan penamaan simbol.</li>
+        <li>Jika flowchart panjang, bagi menjadi sub-proses.</li>
+      </ul>
+    </section>
+
+  <footer class="bg-white border-top">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 — Halaman Pengertian Flowchart.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
