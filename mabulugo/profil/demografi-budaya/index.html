@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demografi, Budaya & Iklim – Profil Desa – Desa Mabulugo</title>
+  <meta name="description" content="Suku, agama, dan musim.">
+  <meta property="og:title" content="Demografi, Budaya & Iklim – Profil Desa – Desa Mabulugo">
+  <meta property="og:description" content="Suku, agama, dan musim.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f6b3a">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<div class="ribbon">MOCKUP – seluruh isi di luar data resmi desa (sejarah, letak, batas, dusun, fasilitas) adalah <strong>DATA CONTOH</strong> dan akan diganti dengan data asli.</div>
+
+<header class="situs">
+  <div class="wrap">
+    <div class="bar">
+      <a class="merek" href="../../">
+        <span class="logo" aria-hidden="true">M</span>
+        <span>Desa Mabulugo<small>Kec. Kapontori, Kab. Buton</small></span>
+      </a>
+      <button id="tombol-menu" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+      <nav id="menu" aria-label="Menu utama">
+        <a href="../../">Beranda</a>
+        <a href="../../profil/" aria-current="page">Profil</a>
+        <a href="../../pemerintahan/">Pemerintahan</a>
+        <a href="../../transparansi/">Transparansi</a>
+        <a href="../../potensi/">Potensi</a>
+        <a href="../../layanan/">Layanan</a>
+        <a href="../../informasi/">Informasi</a>
+        <a href="../../fasilitas/">Fasilitas</a>
+        <a href="../../kontak/">Kontak</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+<section><div class="wrap"><nav class="crumb" aria-label="Jejak halaman"><a href="../../">Beranda</a> › <a href="../">Profil Desa</a> › <span aria-current="page">Demografi, Budaya & Iklim</span></nav><div class="judul-seksi"><h1>Demografi, Budaya & Iklim</h1><p>Suku, agama, dan musim.</p></div><div class="kartu isi-halaman"><h3>Masyarakat</h3><p>Masyarakat terdiri dari beragam suku, antara lain Buton, Muna, dan Bali. Mayoritas beragama Islam dan sebagian beragama Hindu.</p><h3>Iklim</h3><p>Musim hujan, musim kemarau, dan masa pancaroba.</p></div><div class="lainnya"><h3>Bagian lain di Profil</h3><div class="chips"><a href="../sejarah/">Sejarah</a><a href="../visi-misi/">Visi & Misi</a><a href="../letak-geografis/">Letak Geografis & Batas</a><a href="../dusun/">Pembagian Dusun</a><a href="../peta/">Peta Lokasi</a></div></div></div></section>
+</main>
+
+<footer class="situs">
+  <div class="wrap">
+    <div class="grid g3">
+      <div><h3>Desa Mabulugo</h3><p>Kec. Kapontori, Kab. Buton<br>Sulawesi Tenggara</p></div>
+      <div><h3>Tautan</h3><p><a href="../../profil/">Profil</a> · <a href="../../transparansi/">Transparansi</a> · <a href="../../layanan/">Layanan</a> · <a href="../../kontak/">Kontak</a></p></div>
+      <div><h3>Catatan</h3><p>Ini adalah mockup untuk pratinjau tampilan. Data selain data resmi desa hanya contoh.</p></div>
+    </div>
+    <div class="hak">© Pemerintah Desa Mabulugo</div>
+  </div>
+</footer>
+
+<script>
+  var tombol = document.getElementById('tombol-menu');
+  var menu = document.getElementById('menu');
+  tombol.addEventListener('click', function () {
+    var buka = menu.classList.toggle('buka');
+    tombol.setAttribute('aria-expanded', buka);
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('buka');
+      tombol.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+</body>
+</html>

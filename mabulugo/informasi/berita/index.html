@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Berita – Informasi – Desa Mabulugo</title>
+  <meta name="description" content="Kabar terbaru dari desa.">
+  <meta property="og:title" content="Berita – Informasi – Desa Mabulugo">
+  <meta property="og:description" content="Kabar terbaru dari desa.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f6b3a">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<div class="ribbon">MOCKUP – seluruh isi di luar data resmi desa (sejarah, letak, batas, dusun, fasilitas) adalah <strong>DATA CONTOH</strong> dan akan diganti dengan data asli.</div>
+
+<header class="situs">
+  <div class="wrap">
+    <div class="bar">
+      <a class="merek" href="../../">
+        <span class="logo" aria-hidden="true">M</span>
+        <span>Desa Mabulugo<small>Kec. Kapontori, Kab. Buton</small></span>
+      </a>
+      <button id="tombol-menu" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+      <nav id="menu" aria-label="Menu utama">
+        <a href="../../">Beranda</a>
+        <a href="../../profil/">Profil</a>
+        <a href="../../pemerintahan/">Pemerintahan</a>
+        <a href="../../transparansi/">Transparansi</a>
+        <a href="../../potensi/">Potensi</a>
+        <a href="../../layanan/">Layanan</a>
+        <a href="../../informasi/" aria-current="page">Informasi</a>
+        <a href="../../fasilitas/">Fasilitas</a>
+        <a href="../../kontak/">Kontak</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+<section><div class="wrap"><nav class="crumb" aria-label="Jejak halaman"><a href="../../">Beranda</a> › <a href="../">Informasi</a> › <span aria-current="page">Berita</span></nav><div class="judul-seksi"><h1>Berita</h1><p>Kabar terbaru dari desa.</p></div><div class="kartu isi-halaman"><div class="grid g2"><article class="kartu"><div class="thumb">Gambar berita (placeholder)</div><div class="meta">12 Oktober 2026</div><h3>Gotong Royong Membersihkan Lingkungan Desa</h3><p>Warga tiga dusun bersama perangkat desa melaksanakan kerja bakti membersihkan jalan dan saluran air menjelang musim hujan.</p></article><article class="kartu"><div class="thumb">Gambar berita (placeholder)</div><div class="meta">5 Oktober 2026</div><h3>Posyandu Bulanan Berjalan Lancar</h3><p>Kegiatan posyandu bulan ini diikuti puluhan ibu dan balita, meliputi penimbangan, imunisasi, dan penyuluhan gizi.</p></article></div></div><div class="lainnya"><h3>Bagian lain di Informasi</h3><div class="chips"><a href="../pengumuman/">Pengumuman</a><a href="../agenda/">Agenda</a><a href="../galeri-foto/">Galeri Foto</a></div></div></div></section>
+</main>
+
+<footer class="situs">
+  <div class="wrap">
+    <div class="grid g3">
+      <div><h3>Desa Mabulugo</h3><p>Kec. Kapontori, Kab. Buton<br>Sulawesi Tenggara</p></div>
+      <div><h3>Tautan</h3><p><a href="../../profil/">Profil</a> · <a href="../../transparansi/">Transparansi</a> · <a href="../../layanan/">Layanan</a> · <a href="../../kontak/">Kontak</a></p></div>
+      <div><h3>Catatan</h3><p>Ini adalah mockup untuk pratinjau tampilan. Data selain data resmi desa hanya contoh.</p></div>
+    </div>
+    <div class="hak">© Pemerintah Desa Mabulugo</div>
+  </div>
+</footer>
+
+<script>
+  var tombol = document.getElementById('tombol-menu');
+  var menu = document.getElementById('menu');
+  tombol.addEventListener('click', function () {
+    var buka = menu.classList.toggle('buka');
+    tombol.setAttribute('aria-expanded', buka);
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('buka');
+      tombol.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+</body>
+</html>

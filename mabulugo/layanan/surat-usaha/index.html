@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Surat Keterangan Usaha – Layanan Masyarakat – Desa Mabulugo</title>
+  <meta name="description" content="Syarat dan cara mengurus.">
+  <meta property="og:title" content="Surat Keterangan Usaha – Layanan Masyarakat – Desa Mabulugo">
+  <meta property="og:description" content="Syarat dan cara mengurus.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f6b3a">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<div class="ribbon">MOCKUP – seluruh isi di luar data resmi desa (sejarah, letak, batas, dusun, fasilitas) adalah <strong>DATA CONTOH</strong> dan akan diganti dengan data asli.</div>
+
+<header class="situs">
+  <div class="wrap">
+    <div class="bar">
+      <a class="merek" href="../../">
+        <span class="logo" aria-hidden="true">M</span>
+        <span>Desa Mabulugo<small>Kec. Kapontori, Kab. Buton</small></span>
+      </a>
+      <button id="tombol-menu" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+      <nav id="menu" aria-label="Menu utama">
+        <a href="../../">Beranda</a>
+        <a href="../../profil/">Profil</a>
+        <a href="../../pemerintahan/">Pemerintahan</a>
+        <a href="../../transparansi/">Transparansi</a>
+        <a href="../../potensi/">Potensi</a>
+        <a href="../../layanan/" aria-current="page">Layanan</a>
+        <a href="../../informasi/">Informasi</a>
+        <a href="../../fasilitas/">Fasilitas</a>
+        <a href="../../kontak/">Kontak</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+<section><div class="wrap"><nav class="crumb" aria-label="Jejak halaman"><a href="../../">Beranda</a> › <a href="../">Layanan Masyarakat</a> › <span aria-current="page">Surat Keterangan Usaha</span></nav><div class="judul-seksi"><h1>Surat Keterangan Usaha</h1><p>Syarat dan cara mengurus.</p></div><div class="kartu isi-halaman"><h3>Syarat</h3><ul class="rapi"><li>Fotokopi KTP dan Kartu Keluarga</li><li>Surat pengantar Kepala Dusun</li><li>Keterangan jenis dan lokasi usaha</li></ul><h3>Cara</h3><p>Datang ke kantor desa pada jam pelayanan dengan membawa berkas di atas.</p></div><div class="lainnya"><h3>Bagian lain di Layanan</h3><div class="chips"><a href="../surat-domisili/">Surat Keterangan Domisili</a><a href="../sktm/">Surat Keterangan Tidak Mampu</a><a href="../layanan-lainnya/">Layanan Lainnya</a><a href="../jadwal-pelayanan/">Jadwal Pelayanan</a><a href="../pengaduan/">Pengaduan & Aspirasi</a></div></div></div></section>
+</main>
+
+<footer class="situs">
+  <div class="wrap">
+    <div class="grid g3">
+      <div><h3>Desa Mabulugo</h3><p>Kec. Kapontori, Kab. Buton<br>Sulawesi Tenggara</p></div>
+      <div><h3>Tautan</h3><p><a href="../../profil/">Profil</a> · <a href="../../transparansi/">Transparansi</a> · <a href="../../layanan/">Layanan</a> · <a href="../../kontak/">Kontak</a></p></div>
+      <div><h3>Catatan</h3><p>Ini adalah mockup untuk pratinjau tampilan. Data selain data resmi desa hanya contoh.</p></div>
+    </div>
+    <div class="hak">© Pemerintah Desa Mabulugo</div>
+  </div>
+</footer>
+
+<script>
+  var tombol = document.getElementById('tombol-menu');
+  var menu = document.getElementById('menu');
+  tombol.addEventListener('click', function () {
+    var buka = menu.classList.toggle('buka');
+    tombol.setAttribute('aria-expanded', buka);
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('buka');
+      tombol.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+</body>
+</html>

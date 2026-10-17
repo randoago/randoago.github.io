@@ -195,3 +195,21 @@ footer .hak { border-top: 1px solid rgba(255,255,255,.2); margin-top: 20px; padd
 
 /* Menu aktif */
 nav#menu a[aria-current="page"] { color: var(--hijau); font-weight: 700; background: var(--pasir); }
+
+/* Halaman bertingkat */
+.crumb { font-size: .88rem; color: var(--teks-pudar); margin-bottom: 14px; }
+.crumb a { color: var(--laut-tua); }
+h1 { font-size: 1.9rem; color: var(--hijau-tua); margin: 0 0 .3em; line-height: 1.2; }
+.judul-seksi h1::after { content: ""; display: block; width: 56px; height: 4px; border-radius: 2px; background: var(--tanah); margin-top: 8px; }
+.kartu-link { display: block; text-decoration: none; color: var(--teks); transition: border-color .15s, transform .15s; }
+.kartu-link:hover { border-color: var(--hijau); transform: translateY(-2px); }
+.kartu-link p { color: var(--teks-pudar); margin: 0 0 .6em; font-size: .95rem; }
+.kartu-link .lanjut { color: var(--hijau); font-weight: 600; font-size: .92rem; }
+.isi-halaman h3 { margin-top: 1em; }
+.isi-halaman > :first-child { margin-top: 0; }
+.catatan { font-size: .85rem; color: var(--teks-pudar); margin-top: 12px; margin-bottom: 0; }
+.lainnya { margin-top: 28px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips a { background: #fff; border: 1px solid var(--garis); border-radius: 999px; padding: 6px 14px; font-size: .9rem; text-decoration: none; color: var(--teks); }
+.chips a:hover { border-color: var(--hijau); color: var(--hijau); }
+@media (min-width: 720px) { h1 { font-size: 2.3rem; } }
