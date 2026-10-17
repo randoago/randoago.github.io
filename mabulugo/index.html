@@ -8,7 +8,11 @@
   <meta property="og:title" content="Desa Mabulugo, Kapontori, Buton – Website Resmi (Mockup)">
   <meta property="og:description" content="Profil dan informasi Desa Mabulugo, Kecamatan Kapontori, Kabupaten Buton, Sulawesi Tenggara.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#2f6b3a">
+  <meta name="theme-color" content="#003244">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&amp;icon_names=account_balance,account_tree,agriculture,analytics,arrow_forward,assignment,badge,bar_chart,call,campaign,description,distance,diversity_3,event,explore,fact_check,flag,folder_open,forum,foundation,gavel,groups,health_and_safety,history_edu,holiday_village,home_work,inventory_2,landscape,location_city,mail,map,menu,near_me,newspaper,outgoing_mail,payments,person,photo_library,public,published_with_changes,savings,schedule,school,send,square_foot,storefront,verified,visibility,volunteer_activism,waves&amp;display=block">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,9 +24,9 @@
     <div class="bar">
       <a class="merek" href="./">
         <span class="logo" aria-hidden="true">M</span>
-        <span>Desa Mabulugo<small>Kec. Kapontori, Kab. Buton</small></span>
+        <span>Desa Mabulugo<small>Kec. Kapontori, Kab. Buton, Sulawesi Tenggara</small></span>
       </a>
-      <button id="tombol-menu" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+      <button id="tombol-menu" aria-expanded="false" aria-controls="menu"><span class="material-symbols-outlined" aria-hidden="true">menu</span> Menu</button>
       <nav id="menu" aria-label="Menu utama">
         <a href="" aria-current="page">Beranda</a>
         <a href="profil/">Profil</a>
@@ -40,34 +44,49 @@
 
 <main>
 <div class="hero" id="beranda">
-  <div class="wrap">
-    <div class="teks">
-      <h1>Selamat Datang di Desa Mabulugo</h1>
-      <p class="lead">Kecamatan Kapontori, Kabupaten Buton, Sulawesi Tenggara. Desa di tepi Selat Buton dengan masyarakat yang beragam dan hidup rukun.</p>
-      <a class="tombol" href="profil/">Kenali Desa Kami</a>
-      <a class="tombol laut" href="layanan/">Layanan Desa</a>
+  <div class="wrap hero-grid">
+    <div class="hero-teks">
+      <span class="pil"><span class="material-symbols-outlined" aria-hidden="true">waves</span> Kecamatan Kapontori • Kabupaten Buton</span>
+      <h1>Selamat Datang di Portal Resmi <span>Desa Mabulugo</span></h1>
+      <p class="lead">Desa di tepi Selat Buton dengan masyarakat yang beragam dan hidup rukun. Informasi profil, pemerintahan, anggaran, dan layanan desa dalam satu tempat.</p>
+      <div class="aksi">
+        <a class="tombol putih" href="layanan/"><span class="material-symbols-outlined" aria-hidden="true">assignment</span> Layanan Administrasi Surat</a>
+        <a class="tombol kaca" href="potensi/"><span class="material-symbols-outlined" aria-hidden="true">explore</span> Jelajahi Potensi Desa</a>
+      </div>
+      <div class="metrik">
+        <div><b>± 77,18 km²</b><span>Luas wilayah</span></div>
+        <div><b>3 dusun</b><span>Mabulugo, Sekar Sari, Mekar Sari</span></div>
+        <div><b>2006</b><span>Desa definitif</span></div>
+      </div>
     </div>
-    <!-- Ilustrasi placeholder (buatan sendiri, bukan foto) -->
-    <svg viewBox="0 0 800 220" role="img" aria-label="Ilustrasi pesisir: laut, perbukitan hijau, dan rumah desa (gambar placeholder)">
-      <rect width="800" height="220" fill="#d9eef4"/>
-      <circle cx="680" cy="50" r="28" fill="#f6d36b"/>
-      <path d="M0 150 Q120 70 260 130 T520 110 T800 140 V220 H0Z" fill="#7fb38a"/>
-      <path d="M0 175 Q160 120 330 165 T620 150 T800 170 V220 H0Z" fill="#2f6b3a"/>
-      <path d="M0 200 Q100 188 200 200 T400 200 T600 200 T800 200 V220 H0Z" fill="#1f6f8b"/>
-      <g fill="#a8743f"><rect x="330" y="140" width="46" height="26"/><rect x="400" y="148" width="40" height="22"/><rect x="470" y="142" width="44" height="26"/></g>
-      <g fill="#7a4f25"><path d="M324 140 l29 -20 l29 20z"/><path d="M394 148 l26 -18 l26 18z"/><path d="M464 142 l28 -19 l28 19z"/></g>
-    </svg>
+    <figure class="hero-foto">
+      <img src="img/hero.jpg" width="1920" height="1080" alt="Laut biru dan perbukitan di pesisir Sulawesi Tenggara (foto ilustrasi sementara)">
+      <figcaption><span class="lencana">Foto ilustrasi</span><strong>Pesisir Sulawesi Tenggara</strong><small>Foto sementara, bukan foto Desa Mabulugo.</small></figcaption>
+    </figure>
   </div>
 </div>
+
+<section class="stat-tumpang">
+  <div class="wrap">
+    <div class="grid g5">
+      <div class="kartu stat"><div class="atas"><span>Luas wilayah</span><span class="material-symbols-outlined" aria-hidden="true">square_foot</span></div><div class="angka">77,18 km²</div><div class="label">Luas wilayah (±)</div></div>
+      <div class="kartu stat"><div class="atas"><span>Wilayah dusun</span><span class="material-symbols-outlined" aria-hidden="true">holiday_village</span></div><div class="angka">3 dusun</div><div class="label">Mabulugo, Sekar Sari, Mekar Sari</div></div>
+      <div class="kartu stat"><div class="atas"><span>Jumlah penduduk</span><span class="material-symbols-outlined" aria-hidden="true">groups</span></div><div class="angka">1.430 jiwa</div><div class="label">398 KK (data contoh)</div></div>
+      <div class="kartu stat"><div class="atas"><span>Jarak</span><span class="material-symbols-outlined" aria-hidden="true">near_me</span></div><div class="angka">± 80 km</div><div class="label">Ke Kab. Buton · ± 16 km ke Kecamatan</div></div>
+      <div class="kartu stat"><div class="atas"><span>Pendidikan</span><span class="material-symbols-outlined" aria-hidden="true">school</span></div><div class="angka">SDN 35</div><div class="label">SD Negeri 35 Buton</div></div>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="wrap">
     <div class="sambutan kartu">
       <div class="foto-kades">Foto Kepala Desa<br>(placeholder)</div>
       <div>
+        <span class="eyebrow">Sambutan Resmi (contoh)</span>
         <h2>Sambutan Kepala Desa</h2>
         <p>Assalamu'alaikum warahmatullahi wabarakatuh. Selamat datang di website resmi Desa Mabulugo. Melalui website ini kami berharap informasi tentang profil, pemerintahan, anggaran, dan layanan desa dapat diakses dengan mudah oleh seluruh warga dan masyarakat luas. Mari bersama-sama membangun desa yang maju, mandiri, dan sejahtera.</p>
-        <p><strong>Nama Kepala Desa (contoh)</strong><br>Kepala Desa Mabulugo</p>
+        <p><strong>Nama Kepala Desa (contoh)</strong><br><span style="color:var(--on-surface-variant)">Kepala Desa Mabulugo · Desa definitif sejak 2006, kepala desa pertama Wa Ode Nurnia</span></p>
       </div>
     </div>
   </div>
@@ -75,13 +94,45 @@
 
 <section class="alt">
   <div class="wrap">
-    <div class="judul-seksi"><h2>Desa dalam Angka</h2></div>
+    <div class="judul-seksi"><span class="eyebrow">Layanan Warga</span><h2>Akses Cepat Pengurusan Surat</h2><p>Lihat syarat dokumen sebelum datang ke kantor desa.</p></div>
     <div class="grid g4">
-      <div class="kartu stat"><div class="angka">77,18</div><div class="label">km² luas wilayah (±)</div></div>
-      <div class="kartu stat"><div class="angka">3</div><div class="label">dusun</div></div>
-      <div class="kartu stat"><div class="angka">1.430</div><div class="label">jiwa penduduk (contoh)</div></div>
-      <div class="kartu stat"><div class="angka">398</div><div class="label">kepala keluarga (contoh)</div></div>
+      <a class="kartu kartu-link" href="layanan/surat-usaha/"><span class="ikon-kotak"><span class="material-symbols-outlined" aria-hidden="true">storefront</span></span><span class="tag">UMKM & Nelayan</span><h3>Surat Keterangan Usaha</h3><p>Untuk legalitas usaha, pinjaman modal, atau bantuan alat.</p><span class="lanjut">Lihat syarat <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span></a>
+      <a class="kartu kartu-link" href="layanan/surat-domisili/"><span class="ikon-kotak"><span class="material-symbols-outlined" aria-hidden="true">badge</span></span><span class="tag">Kependudukan</span><h3>Surat Keterangan Domisili</h3><p>Bukti tempat tinggal bagi warga di tiga dusun.</p><span class="lanjut">Lihat syarat <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span></a>
+      <a class="kartu kartu-link" href="layanan/sktm/"><span class="ikon-kotak"><span class="material-symbols-outlined" aria-hidden="true">volunteer_activism</span></span><span class="tag">Bantuan Sosial</span><h3>Surat Tidak Mampu (SKTM)</h3><p>Untuk beasiswa, berobat, atau pengusulan bantuan.</p><span class="lanjut">Lihat syarat <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span></a>
+      <a class="kartu kartu-link" href="layanan/pengaduan/"><span class="ikon-kotak"><span class="material-symbols-outlined" aria-hidden="true">forum</span></span><span class="tag">Aspirasi</span><h3>Pengaduan &amp; Aspirasi</h3><p>Sampaikan saran atau keluhan kepada pemerintah desa.</p><span class="lanjut">Lihat syarat <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span></a>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap grid g2" style="align-items:center;gap:32px">
+    <div>
+      <span class="eyebrow">Akuntabilitas Publik</span>
+      <h2>Transparansi APBDes</h2>
+      <p style="color:var(--on-surface-variant)">Pemerintah desa menyajikan anggaran secara terbuka agar dapat dipantau seluruh warga. Angka di samping adalah contoh tampilan.</p>
+      <a class="tombol laut" href="transparansi/"><span class="material-symbols-outlined" aria-hidden="true">analytics</span> Buka Halaman Transparansi</a>
+    </div>
+    <div class="kartu">
+      <h3>APBDes 2026 (contoh)</h3>
+      <div class="grafik">
+        <div class="batang"><span>Pendapatan</span><div class="isi-batang" style="width:98.3%"></div></div>
+        <div class="batang"><span>Belanja</span><div class="isi-batang b" style="width:100%"></div></div>
+        <div class="batang"><span>Pembiayaan</span><div class="isi-batang c" style="width:3%"></div></div>
+      </div>
+      <p class="catatan">Pendapatan Rp 1,42 M · Belanja Rp 1,445 M · Pembiayaan Rp 25 juta</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="judul-seksi"><span class="eyebrow">Kekayaan Alam &amp; Wilayah</span><h2>Potensi Desa</h2></div>
+    <div class="grid g3">
+      <div class="kartu"><span class="ikon-kotak hijau"><span class="material-symbols-outlined" aria-hidden="true">agriculture</span></span><h3 style="margin-top:12px">Pertanian &amp; Perkebunan</h3><p style="margin:0;color:var(--on-surface-variant)">Hasil bumi warga, antara lain padi, jambu mete, kelapa, dan kakao (contoh).</p></div>
+      <div class="kartu"><span class="ikon-kotak hijau"><span class="material-symbols-outlined" aria-hidden="true">storefront</span></span><h3 style="margin-top:12px">UMKM &amp; BUMDes</h3><p style="margin:0;color:var(--on-surface-variant)">Usaha olahan dan kerajinan warga (contoh).</p></div>
+      <div class="kartu"><span class="ikon-kotak hijau"><span class="material-symbols-outlined" aria-hidden="true">landscape</span></span><h3 style="margin-top:12px">Wisata Bendungan Mabulugo</h3><p style="margin:0;color:var(--on-surface-variant)">Daya tarik alam desa. Alamat tercatat di Boneatiro, Kapontori (perlu diverifikasi).</p></div>
+    </div>
+    <p style="margin-top:16px"><a href="potensi/">Lihat semua potensi →</a></p>
   </div>
 </section>
 
@@ -89,12 +140,12 @@
   <div class="wrap">
     <div class="grid g2">
       <div>
-        <div class="judul-seksi"><h2>Berita Terbaru</h2></div>
+        <div class="judul-seksi"><span class="eyebrow">Kabar Desa</span><h2>Berita Terbaru</h2></div>
         <div class="grid"><article class="kartu"><div class="thumb">Gambar berita (placeholder)</div><div class="meta">12 Oktober 2026</div><h3>Gotong Royong Membersihkan Lingkungan Desa</h3><p>Warga tiga dusun bersama perangkat desa melaksanakan kerja bakti membersihkan jalan dan saluran air menjelang musim hujan.</p></article><article class="kartu"><div class="thumb">Gambar berita (placeholder)</div><div class="meta">5 Oktober 2026</div><h3>Posyandu Bulanan Berjalan Lancar</h3><p>Kegiatan posyandu bulan ini diikuti puluhan ibu dan balita, meliputi penimbangan, imunisasi, dan penyuluhan gizi.</p></article></div>
         <p style="margin-top:14px"><a href="informasi/berita/">Lihat semua berita →</a></p>
       </div>
       <div>
-        <div class="judul-seksi"><h2>Pengumuman</h2></div>
+        <div class="judul-seksi"><span class="eyebrow">Informasi Resmi</span><h2>Pengumuman</h2></div>
         <div class="grid"><div class="kartu"><div class="meta">15 Oktober 2026</div><h3>Jadwal Pelayanan Surat Selama Bulan Oktober</h3></div><div class="kartu"><div class="meta">10 Oktober 2026</div><h3>Musyawarah Dusun Penyusunan RKP Desa</h3></div><div class="kartu"><div class="meta">1 Oktober 2026</div><h3>Pembayaran PBB Dibuka di Kantor Desa</h3></div></div>
         <p style="margin-top:14px"><a href="informasi/pengumuman/">Lihat semua pengumuman →</a></p>
       </div>
@@ -104,20 +155,17 @@
 
 <section class="alt">
   <div class="wrap">
-    <div class="judul-seksi"><h2>Layanan Cepat</h2></div>
-    <div class="grid g4 cepat">
-      <a href="layanan/"><span class="ikon" aria-hidden="true">📄</span><span>Surat Keterangan</span></a>
-      <a href="transparansi/apbdes/"><span class="ikon" aria-hidden="true">📊</span><span>APBDes</span></a>
-      <a href="layanan/pengaduan/"><span class="ikon" aria-hidden="true">💬</span><span>Pengaduan &amp; Aspirasi</span></a>
-      <a href="kontak/"><span class="ikon" aria-hidden="true">📍</span><span>Kontak &amp; Lokasi</span></a>
+    <div class="cta">
+      <div>
+        <span class="pil"><span class="material-symbols-outlined" aria-hidden="true">forum</span> Saluran Aspirasi</span>
+        <h2>Punya Saran, Pengaduan, atau Pertanyaan?</h2>
+        <p>Pemerintah desa siap mendengar usulan dan keluhan warga.</p>
+      </div>
+      <div class="aksi">
+        <a class="tombol putih" href="layanan/pengaduan/"><span class="material-symbols-outlined" aria-hidden="true">send</span> Kirim Pengaduan</a>
+        <a class="tombol kaca" href="kontak/"><span class="material-symbols-outlined" aria-hidden="true">call</span> Kontak Kantor Desa</a>
+      </div>
     </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="judul-seksi"><h2>Jelajahi Website</h2></div>
-    <div class="grid g3"><a class="kartu kartu-link" href="profil/"><h3>Profil Desa</h3><p>Sejarah, letak, dan masyarakat Desa Mabulugo</p><span class="lanjut">Buka →</span></a><a class="kartu kartu-link" href="pemerintahan/"><h3>Pemerintahan Desa</h3><p>Struktur organisasi dan lembaga desa (nama adalah contoh)</p><span class="lanjut">Buka →</span></a><a class="kartu kartu-link" href="transparansi/"><h3>Transparansi</h3><p>APBDes, realisasi dana desa, dan data penduduk (angka contoh)</p><span class="lanjut">Buka →</span></a><a class="kartu kartu-link" href="potensi/"><h3>Potensi Desa</h3><p>Sumber daya dan daya tarik Desa Mabulugo</p><span class="lanjut">Buka →</span></a><a class="kartu kartu-link" href="layanan/"><h3>Layanan Masyarakat</h3><p>Panduan dan syarat pembuatan surat (contoh)</p><span class="lanjut">Buka →</span></a><a class="kartu kartu-link" href="informasi/"><h3>Informasi</h3><p>Berita, pengumuman, agenda, dan galeri</p><span class="lanjut">Buka →</span></a><a class="kartu kartu-link" href="fasilitas/"><h3>Fasilitas Umum</h3><p>Sarana pendidikan, kesehatan, ibadah, dan infrastruktur</p><span class="lanjut">Buka →</span></a></div>
   </div>
 </section>
 </main>
@@ -129,7 +177,7 @@
       <div><h3>Tautan</h3><p><a href="profil/">Profil</a> · <a href="transparansi/">Transparansi</a> · <a href="layanan/">Layanan</a> · <a href="kontak/">Kontak</a></p></div>
       <div><h3>Catatan</h3><p>Ini adalah mockup untuk pratinjau tampilan. Data selain data resmi desa hanya contoh.</p></div>
     </div>
-    <div class="hak">© Pemerintah Desa Mabulugo</div>
+    <div class="hak">© Pemerintah Desa Mabulugo · Foto: <a href="https://commons.wikimedia.org/wiki/File:Blue_Sea_Of_Meleura.jpg" target="_blank" rel="noopener">"Blue Sea Of Meleura"</a> oleh Risna monika, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, ukuran diubah. Foto Pantai Meleura, Sulawesi Tenggara (ilustrasi sementara, bukan foto Desa Mabulugo).</div>
   </div>
 </footer>
 
