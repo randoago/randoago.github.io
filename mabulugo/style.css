@@ -153,13 +153,9 @@ tr:last-child td { border-bottom: 0; }
 /* Grafik batang */
 .grafik { display: grid; gap: 10px; }
 .batang { display: grid; grid-template-columns: 110px 1fr; align-items: center; gap: 10px; font-size: .9rem; }
-.batang .isi-batang {
-  height: 26px; border-radius: 6px;
-  background: repeating-linear-gradient(45deg, #dfe9e1, #dfe9e1 8px, #eef4ef 8px, #eef4ef 16px);
-  border: 1px dashed #9db8a3; width: 100%;
-}
-.batang .isi-batang.b { background: repeating-linear-gradient(45deg, #d5e5ec, #d5e5ec 8px, #e9f2f6 8px, #e9f2f6 16px); border-color: #8fb3c2; }
-.batang .isi-batang.c { background: repeating-linear-gradient(45deg, #ecdcc4, #ecdcc4 8px, #f6eddd 8px, #f6eddd 16px); border-color: #c9a878; }
+.batang .isi-batang { height: 26px; border-radius: 6px; background: var(--hijau); }
+.batang .isi-batang.b { background: var(--laut); }
+.batang .isi-batang.c { background: var(--tanah); }
 
 /* Peta */
 .peta {
