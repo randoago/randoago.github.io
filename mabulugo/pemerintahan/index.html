@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pemerintahan Desa – Desa Mabulugo</title>
+  <meta name="description" content="Struktur organisasi, BPD, lembaga desa, dan peraturan Desa Mabulugo.">
+  <meta property="og:title" content="Pemerintahan Desa – Desa Mabulugo">
+  <meta property="og:description" content="Struktur organisasi, BPD, lembaga desa, dan peraturan Desa Mabulugo.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f6b3a">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="ribbon">MOCKUP – seluruh isi di luar data resmi desa (sejarah, letak, batas, dusun, fasilitas) adalah <strong>DATA CONTOH</strong> dan akan diganti dengan data asli.</div>
+
+<header class="situs">
+  <div class="wrap">
+    <div class="bar">
+      <a class="merek" href="../">
+        <span class="logo" aria-hidden="true">M</span>
+        <span>Desa Mabulugo<small>Kec. Kapontori, Kab. Buton</small></span>
+      </a>
+      <button id="tombol-menu" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+      <nav id="menu" aria-label="Menu utama">
+        <a href="../">Beranda</a>
+        <a href="../profil/">Profil</a>
+        <a href="../pemerintahan/" aria-current="page">Pemerintahan</a>
+        <a href="../transparansi/">Transparansi</a>
+        <a href="../potensi/">Potensi</a>
+        <a href="../layanan/">Layanan</a>
+        <a href="../informasi/">Informasi</a>
+        <a href="../fasilitas/">Fasilitas</a>
+        <a href="../kontak/">Kontak</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="alt" id="pemerintahan">
+  <div class="wrap">
+    <div class="judul-seksi"><h2>Pemerintahan Desa</h2><p>Struktur organisasi dan lembaga desa (nama adalah contoh)</p></div>
+
+    <div class="org" aria-label="Bagan struktur organisasi (contoh tampilan)">
+      <div class="kotak atas">Kepala Desa<small>Nama Kepala Desa</small></div>
+      <div class="kotak">Sekretaris Desa<small>Nama Sekretaris</small></div>
+      <div class="baris">
+        <div class="kotak">Kaur Keuangan<small>Nama Kaur</small></div>
+        <div class="kotak">Kasi Pelayanan<small>Nama Kasi</small></div>
+        <div class="kotak">Kasi Pemerintahan<small>Nama Kasi</small></div>
+      </div>
+      <div class="baris">
+        <div class="kotak">Kepala Dusun Mabulugo<small>Nama Kadus</small></div>
+        <div class="kotak">Kepala Dusun Sekar Sari<small>Nama Kadus</small></div>
+        <div class="kotak">Kepala Dusun Mekar Sari<small>Nama Kadus</small></div>
+      </div>
+    </div>
+
+    <div class="grid g2" style="margin-top:28px">
+      <div class="kartu">
+        <h3>Badan Permusyawaratan Desa (BPD)</h3>
+        <ul class="rapi">
+          <li>Ketua: Nama Ketua BPD</li>
+          <li>Wakil Ketua: Nama Wakil</li>
+          <li>Sekretaris: Nama Sekretaris</li>
+          <li>Anggota: 2 orang</li>
+        </ul>
+      </div>
+      <div class="kartu">
+        <h3>Lembaga Desa</h3>
+        <ul class="rapi">
+          <li>LPM – Ketua: Nama Ketua</li>
+          <li>PKK – Ketua: Nama Ketua</li>
+          <li>Karang Taruna – Ketua: Nama Ketua</li>
+          <li>Posyandu – Ketua: Nama Ketua</li>
+        </ul>
+      </div>
+    </div>
+    <div class="kartu" style="margin-top:16px">
+      <h3>Peraturan Desa</h3>
+      <div class="tabel-bungkus">
+        <table>
+          <tr><th>Nomor</th><th>Tentang</th><th>Tahun</th><th>Berkas</th></tr>
+          <tr><td>1</td><td>APBDes Tahun Anggaran 2026</td><td>2025</td><td><a href="#">Unduh PDF</a></td></tr>
+          <tr><td>2</td><td>Susunan Organisasi dan Tata Kerja Pemerintah Desa</td><td>2025</td><td><a href="#">Unduh PDF</a></td></tr>
+          <tr><td>3</td><td>Pengelolaan BUMDes</td><td>2026</td><td><a href="#">Unduh PDF</a></td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="situs">
+  <div class="wrap">
+    <div class="grid g3">
+      <div><h3>Desa Mabulugo</h3><p>Kec. Kapontori, Kab. Buton<br>Sulawesi Tenggara</p></div>
+      <div><h3>Tautan</h3><p><a href="../profil/">Profil</a> · <a href="../transparansi/">Transparansi</a> · <a href="../layanan/">Layanan</a> · <a href="../kontak/">Kontak</a></p></div>
+      <div><h3>Catatan</h3><p>Ini adalah mockup untuk pratinjau tampilan. Data selain data resmi desa hanya contoh.</p></div>
+    </div>
+    <div class="hak">© Pemerintah Desa Mabulugo</div>
+  </div>
+</footer>
+
+<script>
+  var tombol = document.getElementById('tombol-menu');
+  var menu = document.getElementById('menu');
+  tombol.addEventListener('click', function () {
+    var buka = menu.classList.toggle('buka');
+    tombol.setAttribute('aria-expanded', buka);
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('buka');
+      tombol.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+</body>
+</html>

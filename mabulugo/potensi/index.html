@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Potensi Desa – Desa Mabulugo</title>
+  <meta name="description" content="Pertanian, UMKM, BUMDes, dan wisata Bendungan Mabulugo.">
+  <meta property="og:title" content="Potensi Desa – Desa Mabulugo">
+  <meta property="og:description" content="Pertanian, UMKM, BUMDes, dan wisata Bendungan Mabulugo.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f6b3a">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="ribbon">MOCKUP – seluruh isi di luar data resmi desa (sejarah, letak, batas, dusun, fasilitas) adalah <strong>DATA CONTOH</strong> dan akan diganti dengan data asli.</div>
+
+<header class="situs">
+  <div class="wrap">
+    <div class="bar">
+      <a class="merek" href="../">
+        <span class="logo" aria-hidden="true">M</span>
+        <span>Desa Mabulugo<small>Kec. Kapontori, Kab. Buton</small></span>
+      </a>
+      <button id="tombol-menu" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+      <nav id="menu" aria-label="Menu utama">
+        <a href="../">Beranda</a>
+        <a href="../profil/">Profil</a>
+        <a href="../pemerintahan/">Pemerintahan</a>
+        <a href="../transparansi/">Transparansi</a>
+        <a href="../potensi/" aria-current="page">Potensi</a>
+        <a href="../layanan/">Layanan</a>
+        <a href="../informasi/">Informasi</a>
+        <a href="../fasilitas/">Fasilitas</a>
+        <a href="../kontak/">Kontak</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="alt" id="potensi">
+  <div class="wrap">
+    <div class="judul-seksi"><h2>Potensi Desa</h2><p>Sumber daya dan daya tarik Desa Mabulugo</p></div>
+    <div class="grid g3">
+      <div class="kartu"><h3>🌾 Pertanian &amp; Perkebunan</h3><p>Lahan pertanian dan perkebunan warga, antara lain padi, jambu mete, kelapa, dan kakao (contoh).</p></div>
+      <div class="kartu"><h3>🛍️ UMKM &amp; BUMDes</h3><p>Usaha olahan hasil kebun, kerajinan, dan warung warga, dengan BUMDes sebagai wadah pengembangan usaha desa (contoh).</p></div>
+      <div class="kartu">
+        <h3>🏞️ Wisata: Bendungan Mabulugo</h3>
+        <p>Bendungan Mabulugo menjadi daya tarik alam bagi warga dan pengunjung. Alamat tercatat di Boneatiro, Kapontori. <span class="isi">[VERIFIKASI: lokasi &amp; alamat sebelum ditampilkan]</span></p>
+      </div>
+    </div>
+    <h3 style="margin-top:28px">Galeri Produk</h3>
+    <div class="grid g4">
+      <div class="thumb">Keripik pisang (contoh)</div>
+      <div class="thumb">Jambu mete (contoh)</div>
+      <div class="thumb">Kerajinan anyaman (contoh)</div>
+      <div class="thumb">Kopra (contoh)</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="situs">
+  <div class="wrap">
+    <div class="grid g3">
+      <div><h3>Desa Mabulugo</h3><p>Kec. Kapontori, Kab. Buton<br>Sulawesi Tenggara</p></div>
+      <div><h3>Tautan</h3><p><a href="../profil/">Profil</a> · <a href="../transparansi/">Transparansi</a> · <a href="../layanan/">Layanan</a> · <a href="../kontak/">Kontak</a></p></div>
+      <div><h3>Catatan</h3><p>Ini adalah mockup untuk pratinjau tampilan. Data selain data resmi desa hanya contoh.</p></div>
+    </div>
+    <div class="hak">© Pemerintah Desa Mabulugo</div>
+  </div>
+</footer>
+
+<script>
+  var tombol = document.getElementById('tombol-menu');
+  var menu = document.getElementById('menu');
+  tombol.addEventListener('click', function () {
+    var buka = menu.classList.toggle('buka');
+    tombol.setAttribute('aria-expanded', buka);
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('buka');
+      tombol.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+</body>
+</html>

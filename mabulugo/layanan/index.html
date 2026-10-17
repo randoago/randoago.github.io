@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layanan Masyarakat – Desa Mabulugo</title>
+  <meta name="description" content="Panduan dan syarat surat, jadwal pelayanan, serta pengaduan Desa Mabulugo.">
+  <meta property="og:title" content="Layanan Masyarakat – Desa Mabulugo">
+  <meta property="og:description" content="Panduan dan syarat surat, jadwal pelayanan, serta pengaduan Desa Mabulugo.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f6b3a">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="ribbon">MOCKUP – seluruh isi di luar data resmi desa (sejarah, letak, batas, dusun, fasilitas) adalah <strong>DATA CONTOH</strong> dan akan diganti dengan data asli.</div>
+
+<header class="situs">
+  <div class="wrap">
+    <div class="bar">
+      <a class="merek" href="../">
+        <span class="logo" aria-hidden="true">M</span>
+        <span>Desa Mabulugo<small>Kec. Kapontori, Kab. Buton</small></span>
+      </a>
+      <button id="tombol-menu" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+      <nav id="menu" aria-label="Menu utama">
+        <a href="../">Beranda</a>
+        <a href="../profil/">Profil</a>
+        <a href="../pemerintahan/">Pemerintahan</a>
+        <a href="../transparansi/">Transparansi</a>
+        <a href="../potensi/">Potensi</a>
+        <a href="../layanan/" aria-current="page">Layanan</a>
+        <a href="../informasi/">Informasi</a>
+        <a href="../fasilitas/">Fasilitas</a>
+        <a href="../kontak/">Kontak</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="layanan">
+  <div class="wrap">
+    <div class="judul-seksi"><h2>Layanan Masyarakat</h2><p>Panduan dan syarat pembuatan surat (contoh)</p></div>
+    <div class="grid g2">
+      <div>
+        <details open>
+          <summary>Surat Keterangan Domisili</summary>
+          <ul class="rapi"><li>Fotokopi KTP dan Kartu Keluarga</li><li>Surat pengantar RT/Kepala Dusun</li><li>Pas foto 3×4 sebanyak 2 lembar</li></ul>
+        </details>
+        <details>
+          <summary>Surat Keterangan Usaha</summary>
+          <ul class="rapi"><li>Fotokopi KTP dan Kartu Keluarga</li><li>Surat pengantar Kepala Dusun</li><li>Keterangan jenis dan lokasi usaha</li></ul>
+        </details>
+        <details>
+          <summary>Surat Keterangan Tidak Mampu (SKTM)</summary>
+          <ul class="rapi"><li>Fotokopi KTP dan Kartu Keluarga</li><li>Surat pengantar Kepala Dusun</li><li>Keterangan tujuan penggunaan surat</li></ul>
+        </details>
+        <details>
+          <summary>Layanan lainnya</summary>
+          <ul class="rapi"><li>Surat pengantar SKCK</li><li>Surat keterangan kelahiran dan kematian</li><li>Pengantar nikah</li></ul>
+        </details>
+      </div>
+      <div>
+        <div class="kartu" style="margin-bottom:16px">
+          <h3>Jadwal Pelayanan Kantor Desa</h3>
+          <div class="tabel-bungkus">
+            <table>
+              <tr><th>Hari</th><th>Jam</th></tr>
+              <tr><td>Senin – Kamis</td><td>08.00 – 15.00 WITA</td></tr>
+              <tr><td>Jumat</td><td>08.00 – 11.30 WITA</td></tr>
+              <tr><td>Sabtu – Minggu</td><td>Tutup</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="kartu">
+          <h3>Pengaduan &amp; Aspirasi</h3>
+          <p>Sampaikan saran atau pengaduan Anda kepada pemerintah desa.</p>
+          <a class="tombol laut" href="mailto:desamabulugo@example.com?subject=Pengaduan%20%2F%20Aspirasi">Kirim Pengaduan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="situs">
+  <div class="wrap">
+    <div class="grid g3">
+      <div><h3>Desa Mabulugo</h3><p>Kec. Kapontori, Kab. Buton<br>Sulawesi Tenggara</p></div>
+      <div><h3>Tautan</h3><p><a href="../profil/">Profil</a> · <a href="../transparansi/">Transparansi</a> · <a href="../layanan/">Layanan</a> · <a href="../kontak/">Kontak</a></p></div>
+      <div><h3>Catatan</h3><p>Ini adalah mockup untuk pratinjau tampilan. Data selain data resmi desa hanya contoh.</p></div>
+    </div>
+    <div class="hak">© Pemerintah Desa Mabulugo</div>
+  </div>
+</footer>
+
+<script>
+  var tombol = document.getElementById('tombol-menu');
+  var menu = document.getElementById('menu');
+  tombol.addEventListener('click', function () {
+    var buka = menu.classList.toggle('buka');
+    tombol.setAttribute('aria-expanded', buka);
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('buka');
+      tombol.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak – Desa Mabulugo</title>
+  <meta name="description" content="Alamat, telepon, email, dan lokasi kantor Desa Mabulugo.">
+  <meta property="og:title" content="Kontak – Desa Mabulugo">
+  <meta property="og:description" content="Alamat, telepon, email, dan lokasi kantor Desa Mabulugo.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2f6b3a">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="ribbon">MOCKUP – seluruh isi di luar data resmi desa (sejarah, letak, batas, dusun, fasilitas) adalah <strong>DATA CONTOH</strong> dan akan diganti dengan data asli.</div>
+
+<header class="situs">
+  <div class="wrap">
+    <div class="bar">
+      <a class="merek" href="../">
+        <span class="logo" aria-hidden="true">M</span>
+        <span>Desa Mabulugo<small>Kec. Kapontori, Kab. Buton</small></span>
+      </a>
+      <button id="tombol-menu" aria-expanded="false" aria-controls="menu">☰ Menu</button>
+      <nav id="menu" aria-label="Menu utama">
+        <a href="../">Beranda</a>
+        <a href="../profil/">Profil</a>
+        <a href="../pemerintahan/">Pemerintahan</a>
+        <a href="../transparansi/">Transparansi</a>
+        <a href="../potensi/">Potensi</a>
+        <a href="../layanan/">Layanan</a>
+        <a href="../informasi/">Informasi</a>
+        <a href="../fasilitas/">Fasilitas</a>
+        <a href="../kontak/" aria-current="page">Kontak</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="alt" id="kontak">
+  <div class="wrap">
+    <div class="judul-seksi"><h2>Kontak</h2></div>
+    <div class="grid g2">
+      <div class="kartu">
+        <h3>Kantor Desa Mabulugo</h3>
+        <p>Desa Mabulugo, Kec. Kapontori, Kab. Buton, Sulawesi Tenggara</p>
+        <ul class="rapi" style="list-style:none;padding:0">
+          <li>📞 Telepon/WhatsApp: 0812-0000-0000 (contoh)</li>
+          <li>✉️ Email: desamabulugo@example.com (contoh)</li>
+          <li>🌐 Media sosial: Facebook / Instagram @desamabulugo (contoh)</li>
+        </ul>
+      </div>
+      <div class="peta">
+        <div><strong>Peta lokasi kantor desa</strong><br><small>Menunggu koordinat yang sudah diverifikasi.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="situs">
+  <div class="wrap">
+    <div class="grid g3">
+      <div><h3>Desa Mabulugo</h3><p>Kec. Kapontori, Kab. Buton<br>Sulawesi Tenggara</p></div>
+      <div><h3>Tautan</h3><p><a href="../profil/">Profil</a> · <a href="../transparansi/">Transparansi</a> · <a href="../layanan/">Layanan</a> · <a href="../kontak/">Kontak</a></p></div>
+      <div><h3>Catatan</h3><p>Ini adalah mockup untuk pratinjau tampilan. Data selain data resmi desa hanya contoh.</p></div>
+    </div>
+    <div class="hak">© Pemerintah Desa Mabulugo</div>
+  </div>
+</footer>
+
+<script>
+  var tombol = document.getElementById('tombol-menu');
+  var menu = document.getElementById('menu');
+  tombol.addEventListener('click', function () {
+    var buka = menu.classList.toggle('buka');
+    tombol.setAttribute('aria-expanded', buka);
+  });
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      menu.classList.remove('buka');
+      tombol.setAttribute('aria-expanded', 'false');
+    }
+  });
+</script>
+</body>
+</html>

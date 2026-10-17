@@ -192,3 +192,6 @@ footer .hak { border-top: 1px solid rgba(255,255,255,.2); margin-top: 20px; padd
   .bar { gap: 16px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Menu aktif */
+nav#menu a[aria-current="page"] { color: var(--hijau); font-weight: 700; background: var(--pasir); }
